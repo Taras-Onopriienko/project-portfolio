@@ -106,6 +106,7 @@ body {
   color: var(--c-light);
   background: var(--c-accent);
 
+  cursor: pointer;
   outline: none;
   border: none;
 }
@@ -248,7 +249,6 @@ body {
 .experience-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .experience-title {
@@ -269,6 +269,7 @@ body {
 .experience-skill {
   display: flex;
   margin-bottom: 20px;
+  margin-left: 28px;
   align-items: center;
 }
 
@@ -436,6 +437,7 @@ body {
 /* TEAM PROJECT */
 
 .team-projects .container {
+  padding-bottom: 0;
   position: relative;
   overflow-x: hidden;
 }
@@ -474,4 +476,46 @@ body {
 
 .team-project-item:last-child {
   margin-bottom: 0;
+}
+
+/* CALLBACK FORM SECTION */
+.callback-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--c-dark);
+  padding: 35px 30px 40px 30px;
+}
+
+.callback-form-title {
+  width: 260px;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--txt-c-light);
+}
+
+.callback-form-descr {
+  width: 260px;
+  margin: 0 0 30px 0;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--txt-c-light);
+}
+
+.callback-form-input {
+  margin-bottom: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 10px 15px 10px;
+  border-bottom: 1px solid var(--c-grey-blue);
+  text-align: center;
+  color: var(--c-grey-blue);
 }
