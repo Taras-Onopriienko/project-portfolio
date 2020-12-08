@@ -28,3 +28,87 @@ const technologiesMultiSelect = new Choices(technologiesSelect, {
     input: "choices__input",
   },
 });
+
+calculateSum();
+
+const calculatorForm = document.querySelector(".calculator-form");
+
+calculatorForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  calculateSum();
+});
+
+function calculateSum() {
+  // Selectors
+
+  const websiteTypeSelect = document.querySelector(
+    "#calculator-form-website-type"
+  );
+  const websiteCart = document.querySelector(
+    "#calculator-form-input-cart input:checked"
+  );
+  const websiteReception = document.querySelector(
+    "#calculator-form-input-reception input:checked"
+  );
+  console.log(websiteCart.value);
+  console.log(websiteReception.value);
+
+  // Value
+
+  const websiteTypeValue = extractPriceFromValue(websiteTypeSelect.value);
+  const technologiesValue = getTechnologiesSum(
+    technologiesMultiSelect.getValue()
+  );
+
+  const websiteCartValue = convertCartOptionToPrice(websiteCart.value);
+  const websiteCartReceptionValue = convertReceptionOptionToPrice(
+    websiteReception.value
+  );
+
+  const totalSum =
+    websiteTypeValue +
+    technologiesValue +
+    websiteCartValue +
+    websiteCartReceptionValue;
+
+  renderSum(totalSum);
+}
+
+function renderSum(sum) {
+  const costElement = document.querySelector(".calculator-form-total-cost");
+
+  costElement.textContent = "Calculating...";
+  setTimeout(function () {
+    costElement.textContent = sum + "$";
+  }, 2000);
+}
+
+function convertCartOptionToPrice(option) {
+  if (option === "yes") {
+    return 300;
+  }
+  return 0;
+}
+
+function convertReceptionOptionToPrice(option) {
+  if (option === "yes") {
+    return 500;
+  }
+  return 0;
+}
+
+function getTechnologiesSum(technologiesArr) {
+  let totalSum = 0;
+  technologiesArr.forEach(function (tech) {
+    totalSum = totalSum + extractPriceFromValue(tech.value);
+  });
+
+  return totalSum;
+}
+
+function extractPriceFromValue(str) {
+  const price = str.match(/:\d+/);
+  if (price) {
+    return Number(price[0].slice(1)) || 0;
+  }
+}
