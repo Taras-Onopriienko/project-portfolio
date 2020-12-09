@@ -216,7 +216,9 @@ body {
   text-decoration: none;
   color: var(--c-dark);
 }
+
 /* MY VIDEO MODAL */
+
 .my-video-container {
   height: 100%;
   display: flex;
@@ -232,6 +234,54 @@ body {
   padding: 10px 14px;
   background: var(--c-light);
   color: var(--c-dark);
+}
+
+/* MODAL REQUEST RECEIVED */
+
+.modal-request-received {
+  display: flex;
+  padding: 20px 10px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.request-received-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 10px;
+  text-align: center;
+  background: var(--c-light);
+}
+
+.request-received-title {
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: var(--txt-c-accent);
+}
+
+.request-received-primary-msg {
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.request-received-secondary-msg {
+  width: 185px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
 }
 
 /* FRONT PAGE */
