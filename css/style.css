@@ -16,6 +16,8 @@
   --txt-c-accent: var(--c-accent);
   --txt-c-light: var(--c-light);
 
+  /* modals */
+  --modal-bgd-dark: rgba(20, 29, 45, 0.8);
   /* font */
   --font-main: "Acrom", sans-serif;
 
@@ -128,12 +130,15 @@ body {
   transition: all 0.3s ease-in-out;
   pointer-events: none;
   display: block;
+  backgraund: var(--modal-bgd-dark);
 }
 
-.modal-activ {
+.modal-active {
   opacity: 1;
   pointer-events: all;
 }
+
+/* MOBILE MENU MODAL */
 
 .modal-mobile-menu {
   background: var(--c-light);
@@ -160,6 +165,7 @@ body {
   font-size: 18px;
   color: var (var(--c-grey-blue));
 }
+
 .mobile-menu-close-btn {
   background-color: var(--c-accent);
   color: var(--c-light);
@@ -207,6 +213,24 @@ body {
   text-decoration: none;
   color: var(--c-dark);
 }
+/* MY VIDEO MODAL */
+.my-video-container {
+  height: 100%;
+  display: flex;
+  padding: 20px 10px;
+  align-items: center;
+  justify-content: center;
+}
+.my-video-content {
+  width: 100%;
+}
+
+.my-video-close-btn {
+  padding: 10px 14px;
+  background: var(--c-light);
+  color: var(--c-dark);
+}
+
 /* FRONT PAGE */
 
 .front-page {
