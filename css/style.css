@@ -138,6 +138,9 @@ body {
   pointer-events: all;
 }
 
+.body-scroll-disable {
+  overflow: hidden;
+}
 /* MOBILE MENU MODAL */
 
 .modal-mobile-menu {
