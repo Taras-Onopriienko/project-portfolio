@@ -284,6 +284,54 @@ body {
   text-align: center;
 }
 
+/* PROJECT MODAL */
+
+.project-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.project-modal-container {
+  background: var(--c-light);
+  padding: 45px 0;
+  text-align: left;
+  position: relative;
+  box-sizing: border-box;
+  height: 85%;
+}
+
+.project-modal-scrollable {
+  overflow-y: auto;
+  height: 100%;
+  padding: 0 25px;
+}
+
+.project-modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--txt-c-dark);
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 0 25px 0;
+  display: block;
+}
+
+.project-modal-text {
+  font-size: 16px;
+  line-height: 145%;
+  color: var(--txt-c-dark);
+  margin: 0 0 30px 0;
+}
+
+.project-modal-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 /* FRONT PAGE */
 
 .front-page {
@@ -611,7 +659,7 @@ body {
 
 .team-projects .container {
   padding-bottom: 0;
-  position: relative;
+  /* position: relative; */
   overflow-x: hidden;
 }
 
@@ -653,6 +701,7 @@ body {
 
 /* CALLBACK FORM SECTION */
 .callback-form-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
