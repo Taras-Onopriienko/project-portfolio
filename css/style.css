@@ -76,6 +76,16 @@ body {
 }
 
 /* COMMON */
+.mobile-element {
+  display: block;
+}
+.tablet-element {
+  display: none;
+}
+.desktop-element {
+  display: none;
+}
+
 .container {
   min-width: 320px;
   width: 100%;
@@ -338,7 +348,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
+
   padding: 30px 10px 55px 10px;
 
   background-color: var(--c-dark);
@@ -951,4 +961,66 @@ body {
   border-left: none;
   margin: 0;
   padding-left: 8px;
+}
+
+@media only screen and (min-width: 640px) {
+  .container {
+    min-width: 640px;
+    padding-bottom: 70px;
+  }
+  .mobile-element {
+    display: none;
+  }
+  .tablet-element {
+    display: block;
+  }
+
+  .front-page-my-name {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 0;
+  }
+  .front-page-profession {
+    margin: 20px 0 30px 0;
+
+    font-size: 55px;
+    line-height: 66px;
+  }
+  .profession-part-1 {
+    margin-right: 40px;
+  }
+  .profession-part-2 {
+    margin-left: 40px;
+  }
+
+  .front-page-description {
+    margin: 0 0 40px;
+    font-size: 17px;
+    line-height: 150%;
+    width: 385px;
+  }
+
+  .front-page-my-info {
+    display: flex;
+    margin-bottom: 60px;
+
+    align-items: center;
+  }
+  .front-page-my-photo {
+    width: 140px;
+    margin-bottom: 0;
+    margin-right: 35px;
+  }
+
+  .front-page-my-decr {
+    text-align: left;
+  }
+
+  .front-page-my-video-btn {
+    margin-bottom: 0;
+  }
+  .front-page-laptop {
+    width: 400px;
+    margin-bottom: 90px;
+  }
 }
