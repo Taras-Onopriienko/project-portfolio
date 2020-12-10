@@ -50,8 +50,6 @@ function calculateSum() {
   const websiteReception = document.querySelector(
     "#calculator-form-input-reception input:checked"
   );
-  console.log(websiteCart.value);
-  console.log(websiteReception.value);
 
   // Value
 
