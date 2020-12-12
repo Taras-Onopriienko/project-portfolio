@@ -884,11 +884,16 @@ body {
   font-weight: bold;
   font-size: 17px;
   line-height: 150%;
+  text-align: center;
 
   color: var(--txt-c-dark);
 }
 
-.footer-subtitle {
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+}
+.footer-my-profession {
   margin: 0 0 20px 0;
 
   text-align: center;
@@ -896,7 +901,7 @@ body {
   line-height: 150%;
 }
 
-.contact-phone {
+.footer-my-tel {
   margin-bottom: 15px;
 
   text-align: center;
@@ -907,7 +912,7 @@ body {
   color: var(--txt-c-dark);
 }
 
-.contact-email {
+.footer-my-mail {
   margin-bottom: 30px;
 
   text-align: center;
@@ -917,18 +922,18 @@ body {
   color: var(--txt-c-dark);
 }
 
-.social-icons-list {
+.social-links {
   font-size: 25px;
 }
 
-.social-icon-link {
+.social-links-item-link {
   margin-right: 35px;
 
   color: var(--c-dark);
   text-decoration: none;
 }
 
-.social-icon-link:last-child {
+.social-links-item-link:last-child {
   margin-right: 0;
 }
 
@@ -1170,5 +1175,24 @@ body {
 
   .calculator-form-title {
     line-height: 150%;
+  }
+
+  .footer .container {
+    align-items: flex-start;
+  }
+
+  .footer-main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer-my-name,
+  .footer-my-profession {
+    text-align: left;
+  }
+
+  .footer-my-mail {
+    margin-bottom: 0;
   }
 }
