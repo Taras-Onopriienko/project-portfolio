@@ -20,167 +20,196 @@
     <!-- Front-page -->
 
     <section class="front-page">
-      <nav class="navigation">
-        <a href="" class="logo-link"
-          ><img src="img/goit-logo.svg" alt="GOIT logo"
-        /></a>
+      <div class="container">
+        <nav class="navigation">
+          <a href="" class="logo-link">
+            <img src="img/goit-logo.svg" alt="GOIT logo"/>
+          </a>
+
+          <div class="desktop-element">
+            <div class="mobile-menu-items">
+              <a href="#about" class="mobile-menu-item">ABOUT</a>
+              <a href="#projects" class="mobile-menu-item">PROJECTS</a>
+              <a href="#calculator" class="mobile-menu-item">COST CALCULATOR</a>
+              <a href="#contacts" class="mobile-menu-item">CONTACTS</a>
+            </div>
+          </div>
+
         <div class="navigation-part">
-          <a href="" class="hire-me-btn"> — HIRE ME</a>
-          <a href="" class="mobile-menu" id="mobile-menu-btn"
-            ><i class="fas fa-bars"></i
+          <a href="#callback-form" class="hire-me-btn"> — HIRE ME</a>
+          <div class="mobile-element tablet-element">
+            <a href="" class="mobile-menu" id="mobile-menu-btn"
+            > <i class="fas fa-bars"></i
           ></a>
+          </div>
         </div>
-      </nav>
+        </nav>
 
-      <h1 class="front-page-my-name">[Alex Tur]</h1>
+        <div class="front-page-wrapper">
+          <div class="front-page-main-info">
+            <img src="img/my-photo.jpg" alt="my photo" class="front-page-my-photo desktop-element" />
+            <h1 class="front-page-my-name">[alex tur]</h1>
+      
+            <h2 class="front-page-profession">
+              <span class="profession-part-1">{Frontend}</span>
+              <span class="profession-part-2">_DEVELOPER</span>
+            </h2>
+      
+            <p class="front-page-description">
+              / Using HTML, CSS, JavaScript, React Native and Node.js I help to
+              build websites, small and medium web apps for business
+            </p>
+      
+            <a href="#projects" class="front-page-gallery-btn accent-btn">
+              See my recent works —
+            </a>
+          </div>
+    
+          <div class="front-page-my-info">
+            <img 
+              src="img/my-photo.jpg" 
+              alt="my photo" 
+              class="front-page-my-photo mobile-element tablet-element" />
 
-      <h2 class="front-page-profession">
-        <span class="profession-part-1">{Frontend}</span>
-        <span class="profession-part-2">_DEVELOPER</span>
-      </h2>
+            <div class="front-page-about-me-container">
+              <p class="front-page-my-decr mobile-element">
+                About me in 2 minutes
+              </p>
 
-      <p class="front-page-description">
-        / Using HTML, CSS, JavaScript, React Native and Node.js I help to build
-        websites, small and medium web apps for business
-      </p>
+              <p class="front-page-my-decr tablet-element desktop-element">
+                About me<br />
+                in 2 minutes
+              </p>
 
-      <button class="front-page-gallery-btn accent-btn">
-        See my recent works —
-      </button>
-
-      <div class="front-page-my-info">
-        <img
-          src="img/my-photo.jpg"
-          alt="my photo"
-          class="front-page-my-photo"
-        />
-
-        <div class="front-page-about-me-container">
-          <p class="front-page-my-decr mobile-element">About me in 2 minutes</p>
-          <p class="front-page-my-decr tablet-element">
-            About me<br />
-            in 2 minutes
-          </p>
-          <button class="front-page-my-video-btn" id="my-video-btn">
-            <i class="fas fa-play"></i>
-            PLAY
-          </button>
-        </div>
-      </div>
-
-      <img src="img/laptop.svg" alt="" class="front-page-laptop" />
-
-      <!-- EXPERIENCE -->
-
-      <div class="experience-container">
-        <h3 class="experience-title">My Coding Skills & Experience</h3>
-        <div class="experience-skill">
-          <div class="experience-dots">
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
+              <button class="front-page-my-video-btn" id="my-video-btn">
+                <i class="fas fa-play"></i>
+                PLAY
+              </button>
+            </div>
           </div>
 
-          <p class="experience-text">Html</p>
-        </div>
-        <div class="experience-skill">
-          <div class="experience-dots">
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-          </div>
+          <img src="img/laptop.svg" alt="" class="front-page-laptop" />
 
-          <p class="experience-text">CSS</p>
-        </div>
-        <div class="experience-skill">
-          <div class="experience-dots">
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i class="experience-dots-item far fa-circle"></i>
-          </div>
+            <!-- EXPERIENCE -->
+          <div class="experience-wrapper">
+            <div class="experience-container">
+              <h3 class="experience-title">My Coding Skills & Experience</h3>
+              
+              <div class="experience-skill">
+                <div class="experience-dots">
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                </div>
 
-          <p class="experience-text">JavaScript</p>
-        </div>
-        <div class="experience-skill">
-          <div class="experience-dots">
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i class="experience-dots-item far fa-circle"></i>
-            <i class="experience-dots-item far fa-circle"></i>
-          </div>
+                <p class="experience-text">Html</p>
+              </div>
 
-          <p class="experience-text">React</p>
-        </div>
-        <div class="experience-skill">
-          <div class="experience-dots">
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i class="experience-dots-item far fa-circle"></i>
-            <i class="experience-dots-item far fa-circle"></i>
-            <i class="experience-dots-item far fa-circle"></i>
-          </div>
+              <div class="experience-skill">
+                <div class="experience-dots">
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                </div>
 
-          <p class="experience-text">Node</p>
-        </div>
-        <div class="experience-skill">
-          <div class="experience-dots">
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i
-              class="experience-dots-item experience-dots-item-accent far fa-circle"
-            ></i>
-            <i class="experience-dots-item far fa-circle"></i>
-            <i class="experience-dots-item far fa-circle"></i>
-            <i class="experience-dots-item far fa-circle"></i>
-          </div>
+                <p class="experience-text">CSS</p>
+              </div>
 
-          <p class="experience-text">React Native</p>
+              <div class="experience-skill">
+                <div class="experience-dots">
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i class="experience-dots-item far fa-circle"></i>
+                </div>
+
+                <p class="experience-text">JavaScript</p>
+              </div>
+
+              <div class="experience-skill">
+                <div class="experience-dots">
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i class="experience-dots-item far fa-circle"></i>
+                  <i class="experience-dots-item far fa-circle"></i>
+                </div>
+
+                <p class="experience-text">React</p>
+              </div>
+
+              <div class="experience-skill">
+                <div class="experience-dots">
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i class="experience-dots-item far fa-circle"></i>
+                  <i class="experience-dots-item far fa-circle"></i>
+                  <i class="experience-dots-item far fa-circle"></i>
+                </div>
+
+                <p class="experience-text">Node</p>
+              </div>
+              
+              <div class="experience-skill">
+                <div class="experience-dots">
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i
+                    class="experience-dots-item experience-dots-item-accent far fa-circle"
+                  ></i>
+                  <i class="experience-dots-item far fa-circle"></i>
+                  <i class="experience-dots-item far fa-circle"></i>
+                  <i class="experience-dots-item far fa-circle"></i>
+                </div>
+
+                <p class="experience-text">React Native</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

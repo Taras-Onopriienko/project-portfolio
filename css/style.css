@@ -19,7 +19,7 @@
   /* modals */
   --modal-bgd-dark: rgba(20, 29, 45, 0.8);
   /* font */
-  --font-main: "Acrom", sans-serif;
+  --font-main: 'Acrom', sans-serif;
 
   /* container width */
   --vertical-scroll: 20px;
@@ -34,34 +34,34 @@
 }
 
 @font-face {
-  font-family: "Acrom";
-  src: url("../fonts/acrom/Acrom-ExtraBold.eot");
-  src: local("Acrom ExtraBold"), local("Acrom-ExtraBold"),
-    url("../fonts/acrom/Acrom-ExtraBold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/acrom/Acrom-ExtraBold.woff") format("woff"),
-    url("../fonts/acrom/Acrom-ExtraBold.ttf") format("truetype");
+  font-family: 'Acrom';
+  src: url('../fonts/acrom/Acrom-ExtraBold.eot');
+  src: local('Acrom ExtraBold'), local('Acrom-ExtraBold'),
+    url('../fonts/acrom/Acrom-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/acrom/Acrom-ExtraBold.woff') format('woff'),
+    url('../fonts/acrom/Acrom-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Acrom";
-  src: url("../fonts/acrom/Acrom-Bold.eot");
-  src: local("Acrom Bold"), local("Acrom-Bold"),
-    url("../fonts/acrom/Acrom-Bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/acrom/Acrom-Bold.woff") format("woff"),
-    url("../fonts/acrom/Acrom-Bold.ttf") format("truetype");
+  font-family: 'Acrom';
+  src: url('../fonts/acrom/Acrom-Bold.eot');
+  src: local('Acrom Bold'), local('Acrom-Bold'),
+    url('../fonts/acrom/Acrom-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/acrom/Acrom-Bold.woff') format('woff'),
+    url('../fonts/acrom/Acrom-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Acrom";
-  src: url("../fonts/acrom/Acrom-Regular.eot");
-  src: local("Acrom Regular"), local("Acrom-Regular"),
-    url("../fonts/acrom/Acrom-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/acrom/Acrom-Regular.woff") format("woff"),
-    url("../fonts/acrom/Acrom-Regular.ttf") format("truetype");
+  font-family: 'Acrom';
+  src: url('../fonts/acrom/Acrom-Regular.eot');
+  src: local('Acrom Regular'), local('Acrom-Regular'),
+    url('../fonts/acrom/Acrom-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/acrom/Acrom-Regular.woff') format('woff'),
+    url('../fonts/acrom/Acrom-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -140,7 +140,7 @@ body {
   transition: all 0.3s ease-in-out;
   pointer-events: none;
   display: block;
-  backgraund: var(--modal-bgd-dark);
+  background-color: var(--modal-bgd-dark);
 }
 
 .modal-active {
@@ -947,7 +947,7 @@ body {
 }
 
 .calculator-form-input .tech-input-container:after {
-  content: "\f107";
+  content: '\f107';
   height: 0;
   width: 0;
   position: absolute;
@@ -955,7 +955,7 @@ body {
   top: 45%;
   margin-top: -2.5px;
   cursor: pointer;
-  font-family: "Font Awesome 5 Free";
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
 
