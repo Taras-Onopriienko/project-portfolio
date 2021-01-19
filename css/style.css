@@ -1375,6 +1375,161 @@ body {
     width: 388px;
     margin: 0;
   }
+
+  .about-content-wrapper {
+    position: relative;
+  }
+
+  .about .container {
+    flex-direction: row;
+    padding: 135px 10px;
+    justify-content: space-between;
+  }
+
+  .about-title {
+    margin-top: 0;
+  }
+
+  .about-projects-bar {
+    background-color: var(--c-accent);
+    width: 159px;
+    height: 465px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 10px 5px;
+    margin-bottom: 35px;
+    margin-top: 15px;
+  }
+
+  .about-projects {
+    z-index: 2;
+  }
+
+  .about-projects-count {
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 78px;
+    color: var(--txt-c-light);
+    margin: 0;
+  }
+
+  .about-projects-text {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 135%;
+    color: var(--txt-c-dark);
+    text-transform: uppercase;
+    width: 125px;
+  }
+  .about-img-text {
+    font-size: 250px;
+    line-height: 300px;
+    right: -223px;
+    top: -23px;
+    z-index: 1;
+  }
+  .about-img {
+    width: 421px;
+    height: 455px;
+    left: -35px;
+  }
+  .callback-form-title {
+    width: 100%;
+  }
+
+  .callback-form-descr {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .callback-form-input-container {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .callback-form-input {
+    width: 30%;
+    margin-right: 40px;
+    max-width: 260px;
+  }
+
+  .callback-form-submit {
+    width: 260px;
+    padding: 15px 20px;
+  }
+
+  .callback-form-input:last-child {
+    margin-right: 0;
+  }
+
+  .calculator .container {
+    flex-direction: row;
+    padding: 150px 10px;
+  }
+
+  .calculator-info-container {
+    position: relative;
+    margin-right: 20px;
+    box-sizing: border-box;
+    width: calc(100% - 386px - 20px);
+  }
+
+  .calculator-form {
+    padding: 40px 50px;
+    width: 386px;
+    box-sizing: border-box;
+  }
+
+  .calculator-title {
+    margin-top: 0;
+    font-size: 70px;
+    line-height: 84px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .calculator-descr {
+    text-align: left;
+    z-index: 2;
+  }
+
+  .calculator-icon {
+    top: 360px;
+  }
+
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-main-content {
+    width: calc(50% + 100px);
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-my-profession {
+    margin-bottom: 0;
+  }
+
+  .request-received-container {
+    padding: 60px 130px 80px 130px;
+  }
+
+  .request-received-primary-msg {
+    width: 350px;
+  }
+
+  .request-received-secondary-msg {
+    width: auto;
+  }
+
+  .project-modal-container {
+    padding: 95px;
+  }
   .mobile-menu-items {
     flex-direction: row;
   }
